@@ -82,6 +82,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Mugen.Codes" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Mugen.Codes – Mission-Critical AI, Defense, Space & BCI Software Engineering" },
+      { name: "twitter:title", content: "Mugen.Codes – Mission-Critical AI, Defense, Space & BCI Software Engineering" },
+      { name: "description", content: "Mugen.Codes builds mission-critical software for defense, space, and BCI applications." },
+      { property: "og:description", content: "Mugen.Codes builds mission-critical software for defense, space, and BCI applications." },
+      { name: "twitter:description", content: "Mugen.Codes builds mission-critical software for defense, space, and BCI applications." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9608a2bd-96a8-4df1-9e02-5bd540da822d/id-preview-99e90e63--cf98088b-896d-4cd4-8725-85e9e7201069.lovable.app-1778496410691.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9608a2bd-96a8-4df1-9e02-5bd540da822d/id-preview-99e90e63--cf98088b-896d-4cd4-8725-85e9e7201069.lovable.app-1778496410691.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
