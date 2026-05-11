@@ -9,8 +9,55 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SpaceSoftwareEngineeringRouteImport } from './routes/space-software-engineering'
+import { Route as PortfolioRouteImport } from './routes/portfolio'
+import { Route as MissionCriticalSoftwareCompanyRouteImport } from './routes/mission-critical-software-company'
+import { Route as DefenseSoftwareDevelopmentRouteImport } from './routes/defense-software-development'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ComplianceCertificationsDefenseSpaceBciRouteImport } from './routes/compliance-certifications-defense-space-bci'
+import { Route as BrainComputerInterfaceSoftwareRouteImport } from './routes/brain-computer-interface-software'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SpaceSoftwareEngineeringRoute =
+  SpaceSoftwareEngineeringRouteImport.update({
+    id: '/space-software-engineering',
+    path: '/space-software-engineering',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const PortfolioRoute = PortfolioRouteImport.update({
+  id: '/portfolio',
+  path: '/portfolio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MissionCriticalSoftwareCompanyRoute =
+  MissionCriticalSoftwareCompanyRouteImport.update({
+    id: '/mission-critical-software-company',
+    path: '/mission-critical-software-company',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DefenseSoftwareDevelopmentRoute =
+  DefenseSoftwareDevelopmentRouteImport.update({
+    id: '/defense-software-development',
+    path: '/defense-software-development',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ComplianceCertificationsDefenseSpaceBciRoute =
+  ComplianceCertificationsDefenseSpaceBciRouteImport.update({
+    id: '/compliance-certifications-defense-space-bci',
+    path: '/compliance-certifications-defense-space-bci',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BrainComputerInterfaceSoftwareRoute =
+  BrainComputerInterfaceSoftwareRouteImport.update({
+    id: '/brain-computer-interface-software',
+    path: '/brain-computer-interface-software',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +66,130 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/brain-computer-interface-software': typeof BrainComputerInterfaceSoftwareRoute
+  '/compliance-certifications-defense-space-bci': typeof ComplianceCertificationsDefenseSpaceBciRoute
+  '/contact': typeof ContactRoute
+  '/defense-software-development': typeof DefenseSoftwareDevelopmentRoute
+  '/mission-critical-software-company': typeof MissionCriticalSoftwareCompanyRoute
+  '/portfolio': typeof PortfolioRoute
+  '/space-software-engineering': typeof SpaceSoftwareEngineeringRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/brain-computer-interface-software': typeof BrainComputerInterfaceSoftwareRoute
+  '/compliance-certifications-defense-space-bci': typeof ComplianceCertificationsDefenseSpaceBciRoute
+  '/contact': typeof ContactRoute
+  '/defense-software-development': typeof DefenseSoftwareDevelopmentRoute
+  '/mission-critical-software-company': typeof MissionCriticalSoftwareCompanyRoute
+  '/portfolio': typeof PortfolioRoute
+  '/space-software-engineering': typeof SpaceSoftwareEngineeringRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/brain-computer-interface-software': typeof BrainComputerInterfaceSoftwareRoute
+  '/compliance-certifications-defense-space-bci': typeof ComplianceCertificationsDefenseSpaceBciRoute
+  '/contact': typeof ContactRoute
+  '/defense-software-development': typeof DefenseSoftwareDevelopmentRoute
+  '/mission-critical-software-company': typeof MissionCriticalSoftwareCompanyRoute
+  '/portfolio': typeof PortfolioRoute
+  '/space-software-engineering': typeof SpaceSoftwareEngineeringRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/brain-computer-interface-software'
+    | '/compliance-certifications-defense-space-bci'
+    | '/contact'
+    | '/defense-software-development'
+    | '/mission-critical-software-company'
+    | '/portfolio'
+    | '/space-software-engineering'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/brain-computer-interface-software'
+    | '/compliance-certifications-defense-space-bci'
+    | '/contact'
+    | '/defense-software-development'
+    | '/mission-critical-software-company'
+    | '/portfolio'
+    | '/space-software-engineering'
+  id:
+    | '__root__'
+    | '/'
+    | '/brain-computer-interface-software'
+    | '/compliance-certifications-defense-space-bci'
+    | '/contact'
+    | '/defense-software-development'
+    | '/mission-critical-software-company'
+    | '/portfolio'
+    | '/space-software-engineering'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BrainComputerInterfaceSoftwareRoute: typeof BrainComputerInterfaceSoftwareRoute
+  ComplianceCertificationsDefenseSpaceBciRoute: typeof ComplianceCertificationsDefenseSpaceBciRoute
+  ContactRoute: typeof ContactRoute
+  DefenseSoftwareDevelopmentRoute: typeof DefenseSoftwareDevelopmentRoute
+  MissionCriticalSoftwareCompanyRoute: typeof MissionCriticalSoftwareCompanyRoute
+  PortfolioRoute: typeof PortfolioRoute
+  SpaceSoftwareEngineeringRoute: typeof SpaceSoftwareEngineeringRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/space-software-engineering': {
+      id: '/space-software-engineering'
+      path: '/space-software-engineering'
+      fullPath: '/space-software-engineering'
+      preLoaderRoute: typeof SpaceSoftwareEngineeringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio': {
+      id: '/portfolio'
+      path: '/portfolio'
+      fullPath: '/portfolio'
+      preLoaderRoute: typeof PortfolioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mission-critical-software-company': {
+      id: '/mission-critical-software-company'
+      path: '/mission-critical-software-company'
+      fullPath: '/mission-critical-software-company'
+      preLoaderRoute: typeof MissionCriticalSoftwareCompanyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/defense-software-development': {
+      id: '/defense-software-development'
+      path: '/defense-software-development'
+      fullPath: '/defense-software-development'
+      preLoaderRoute: typeof DefenseSoftwareDevelopmentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/compliance-certifications-defense-space-bci': {
+      id: '/compliance-certifications-defense-space-bci'
+      path: '/compliance-certifications-defense-space-bci'
+      fullPath: '/compliance-certifications-defense-space-bci'
+      preLoaderRoute: typeof ComplianceCertificationsDefenseSpaceBciRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/brain-computer-interface-software': {
+      id: '/brain-computer-interface-software'
+      path: '/brain-computer-interface-software'
+      fullPath: '/brain-computer-interface-software'
+      preLoaderRoute: typeof BrainComputerInterfaceSoftwareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,7 +202,25 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BrainComputerInterfaceSoftwareRoute: BrainComputerInterfaceSoftwareRoute,
+  ComplianceCertificationsDefenseSpaceBciRoute:
+    ComplianceCertificationsDefenseSpaceBciRoute,
+  ContactRoute: ContactRoute,
+  DefenseSoftwareDevelopmentRoute: DefenseSoftwareDevelopmentRoute,
+  MissionCriticalSoftwareCompanyRoute: MissionCriticalSoftwareCompanyRoute,
+  PortfolioRoute: PortfolioRoute,
+  SpaceSoftwareEngineeringRoute: SpaceSoftwareEngineeringRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
