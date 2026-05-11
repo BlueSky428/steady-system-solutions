@@ -72,19 +72,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Mugen.Codes – Mission-Critical AI, Defense, Space & BCI Software Engineering" },
+      {
+        name: "description",
+        content:
+          "Mugen.Codes develops mission-critical software for defense, aerospace, and neurotechnology organizations, including edge AI, flight software, secure infrastructure, and BCI platforms.",
+      },
+      { name: "author", content: "Mugen.Codes" },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:site_name", content: "Mugen.Codes" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap",
       },
     ],
   }),
