@@ -4,13 +4,13 @@ import { SiteLayout, Hero, Section, FAQ, CTA } from "@/components/SiteLayout";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mugen.Codes – Mission-Critical AI, Defense, Space & BCI Software Engineering" },
+      { title: "Mugen.Codes: Mission-Critical AI, Defense, Space & BCI Software Engineering" },
       {
         name: "description",
         content:
           "Mugen.Codes develops mission-critical software for defense, aerospace, and neurotechnology organizations, including edge AI, flight software, secure infrastructure, and BCI platforms.",
       },
-      { property: "og:title", content: "Mugen.Codes – Mission-Critical Software Engineering" },
+      { property: "og:title", content: "Mugen.Codes: Mission-Critical Software Engineering" },
       {
         property: "og:description",
         content:
@@ -60,10 +60,10 @@ const PROCESS = [
 
 const FAQS = [
   { q: "How does Mugen.Codes handle ITAR / EAR controlled data?", a: "We operate under strict data segregation. For ITAR-restricted defense projects, we use dedicated, audited environments with access limited to US-persons (if required). EAR-controlled space/BCI data is similarly isolated. We sign DD2345 and MPAs as needed." },
-  { q: "What makes your \"calm delivery\" different from agile or waterfall?", a: "Calm delivery is a risk-first philosophy: we prioritize written clarity, explicit ownership, and asynchronous decision-making over ceremonies. You get predictability without burnout — and a full audit trail." },
+  { q: "What makes your \"calm delivery\" different from agile or waterfall?", a: "Calm delivery is a risk-first philosophy: we prioritize written clarity, explicit ownership, and asynchronous decision-making over ceremonies. You get predictability without burnout, and a full audit trail." },
   { q: "Do you offer subcontracting to prime defense/space integrators?", a: "Yes. We have experience as a subcontractor to DEA and other agencies (previous projects under NDA). We provide SOWs, CDRLs, and DI-MISC compliant documentation." },
-  { q: "Can you work with existing legacy codebases (e.g., Ada for space)?", a: "Absolutely. Our senior engineers have revived and modernized legacy missile guidance, satellite command & control, and neural recording systems — while preserving qualification evidence." },
-  { q: "What about BCI — do you build both research and clinical systems?", a: "Yes. For research: real-time data acquisition, stimulation controllers, and analysis pipelines. For clinical (pre-market): IEC 62304 compliant software, integration with investigational devices, and support for IDE/510(k) documentation." },
+  { q: "Can you work with existing legacy codebases (e.g., Ada for space)?", a: "Absolutely. Our senior engineers have revived and modernized legacy missile guidance, satellite command & control, and neural recording systems, while preserving qualification evidence." },
+  { q: "What about BCI? Do you build both research and clinical systems?", a: "Yes. For research: real-time data acquisition, stimulation controllers, and analysis pipelines. For clinical (pre-market): IEC 62304 compliant software, integration with investigational devices, and support for IDE/510(k) documentation." },
   { q: "How do you price projects?", a: "Fixed price for clearly scoped modules (preferred for defense/space contracting), or T&M with monthly caps. We offer milestone-based invoicing aligned to CDRL deliveries." },
   { q: "What is your geographical presence?", a: "Headquartered in the US, with senior engineers in Japan and around the globe. We serve clients worldwide." },
 ];
@@ -89,7 +89,7 @@ function Index() {
       <Section
         eyebrow="Trusted For"
         title={<>High-compliance engineering environments where <span className="text-signal italic">zero surprises</span> is the requirement.</>}
-        intro="From guided munitions and C4ISR systems to satellite flight software and real-time BCI signal processing — your mission depends on zero surprises. Mugen.Codes combines Japanese engineering discipline with a calm, documented workflow that eliminates ambiguity, reduces risk, and delivers systems that stay reliable for decades."
+        intro="From guided munitions and C4ISR systems to satellite flight software and real-time BCI signal processing. Your mission depends on zero surprises. Mugen.Codes combines Japanese engineering discipline with a calm, documented workflow that eliminates ambiguity, reduces risk, and delivers systems that stay reliable for decades."
       >
         <ul className="grid gap-px sm:grid-cols-2 bg-border border border-border rounded-md overflow-hidden">
           {REQUIREMENTS.map((r) => (
@@ -120,7 +120,7 @@ function Index() {
       <Section
         eyebrow="The Discipline"
         title="Why calm delivery wins in mission-critical environments."
-        intro="Most software failures in defense, space, and BCI are not caused by bad coders — they are caused by rushed communication, unclear ownership, and undocumented assumptions. Mugen.Codes fixes that at the process level."
+        intro="Most software failures in defense, space, and BCI are not caused by bad coders; they are caused by rushed communication, unclear ownership, and undocumented assumptions. Mugen.Codes fixes that at the process level."
       >
         <div className="panel overflow-hidden">
           <div className="grid grid-cols-12 px-6 py-4 border-b border-border font-mono text-xs uppercase tracking-wider text-muted-foreground">
@@ -169,7 +169,7 @@ function Index() {
 
       <CTA
         title="Ready to discuss your mission?"
-        body="Whether you need a sovereign AI system, a flight software module, a BCI real-time processing pipeline, or a full-lifecycle defense system — we provide the engineering depth and operational discipline required for high-stakes systems."
+        body="Whether you need a sovereign AI system, a flight software module, a BCI real-time processing pipeline, or a full-lifecycle defense system, we provide the engineering depth and operational discipline required for high-stakes systems."
         primary={{ to: "/contact", label: "Contact Mugen.Codes" }}
         secondary={{ to: "/portfolio", label: "View portfolio" }}
       />

@@ -7,7 +7,7 @@ export const Route = createFileRoute("/portfolio")({
       { title: "Portfolio | Mugen.Codes" },
       { name: "description", content: "Explore Mugen.Codes projects across defense, aerospace, neurotechnology, embedded systems, and mission-critical software engineering." },
       { property: "og:title", content: "Portfolio | Mugen.Codes" },
-      { property: "og:description", content: "ATLAS — multi-sensor intelligence platform for U.S. DEA counter-narcotics operations, and other mission-critical engagements." },
+      { property: "og:description", content: "ATLAS: multi-sensor intelligence platform for U.S. DEA counter-narcotics operations, and other mission-critical engagements." },
     ],
   }),
   component: Page,
@@ -43,7 +43,7 @@ const FEATURES = [
       "≤500 ms latency from sensor event to behavior hypothesis",
       "Loitering, rapid approach, perimeter probing, formation movement",
       "Intent hypotheses with confidence updates",
-      "e.g. \"reconnaissance — 82%\", \"assault approach — 67%\"",
+      "e.g. \"reconnaissance (82%)\", \"assault approach (67%)\"",
     ],
   },
   {
@@ -91,10 +91,10 @@ function Page() {
     <SiteLayout>
       <Hero
         eyebrow="Case Study · ATLAS"
-        title={<>ATLAS — Multi-sensor <span className="text-signal italic">intelligence platform</span>.</>}
-        lede="Edge-deployable, offline-capable intelligence system that fuses video, RF, drone, acoustic, and telemetry data into real-time incident reasoning — used in high-tempo counter-narcotics missions."
+        title={<>ATLAS: Multi-sensor <span className="text-signal italic">intelligence platform</span>.</>}
+        lede="Edge-deployable, offline-capable intelligence system that fuses video, RF, drone, acoustic, and telemetry data into real-time incident reasoning, used in high-tempo counter-narcotics missions."
         bullets={[
-          "End User: U.S. Drug Enforcement Administration — Counter-Narcotics Operations",
+          "End User: U.S. Drug Enforcement Administration, Counter-Narcotics Operations",
           "Role: Software engineering & systems integration by Mugen.Codes",
           "16+ concurrent sensors · ≤500 ms behavior hypothesis · ≥60 min offline",
         ]}
@@ -104,18 +104,18 @@ function Page() {
       <Section
         eyebrow="Mission Context"
         title="Why ATLAS exists."
-        intro="Mexican Transnational Criminal Organizations (e.g., Sinaloa, CJNG) use sophisticated surveillance-evasion tactics — rapid movement, drone overwatch, RF spectrum hopping, and remote triggering of perimeter sensors. Traditional intelligence systems are too slow, too centralized, or unable to correlate multi-domain signals in real time."
+        intro="Mexican Transnational Criminal Organizations (e.g., Sinaloa, CJNG) use sophisticated surveillance-evasion tactics: rapid movement, drone overwatch, RF spectrum hopping, and remote triggering of perimeter sensors. Traditional intelligence systems are too slow, too centralized, or unable to correlate multi-domain signals in real time."
       >
         <p className="max-w-3xl text-muted-foreground leading-relaxed">
-          Mugen.Codes was sub-contracted to deliver ATLAS — a modular, edge-deployable platform that ingests 16+ concurrent sensor types, fuses them into behavior-based incidents, and presents actionable intelligence to operators in ≤10 seconds, while operating offline for ≥60 minutes in austere environments.
+          Mugen.Codes was sub-contracted to deliver ATLAS, a modular, edge-deployable platform that ingests 16+ concurrent sensor types, fuses them into behavior-based incidents, and presents actionable intelligence to operators in ≤10 seconds, while operating offline for ≥60 minutes in austere environments.
         </p>
         <blockquote className="mt-10 border-l-2 border-signal pl-6 font-display text-2xl italic max-w-2xl">
           "Calm delivery of mission-critical software for the hardest environments."
-          <footer className="mt-3 not-italic text-sm font-mono text-muted-foreground">— Mugen.Codes</footer>
+          <footer className="mt-3 not-italic text-sm font-mono text-muted-foreground">Mugen.Codes</footer>
         </blockquote>
       </Section>
 
-      <Section eyebrow="Capabilities" title="ATLAS — key features.">
+      <Section eyebrow="Capabilities" title="ATLAS: key features.">
         <div className="grid gap-6 md:grid-cols-2">
           {FEATURES.map((f) => (
             <div key={f.n} className="panel p-8">
@@ -134,7 +134,7 @@ function Page() {
       </Section>
 
       <Section eyebrow="Modular Adapters" title="Supported sensor & signal types.">
-        <p className="max-w-2xl text-muted-foreground mb-8">All sensors are pluggable adapters — never hardcoded.</p>
+        <p className="max-w-2xl text-muted-foreground mb-8">All sensors are pluggable adapters, never hardcoded.</p>
         <ul className="grid gap-px sm:grid-cols-2 lg:grid-cols-3 bg-border border border-border rounded-md overflow-hidden">
           {[
             "RF detections (SDR, emitters, spectrum events)",
@@ -157,7 +157,7 @@ function Page() {
       <Section
         eyebrow="Cross-Agency"
         title="Why other government agencies should evaluate ATLAS."
-        intro="The same ATLAS platform — developed for DEA counter-cartel operations — applies directly to adjacent mission sets."
+        intro="The same ATLAS platform, developed for DEA counter-cartel operations, applies directly to adjacent mission sets."
       >
         <div className="grid gap-6 md:grid-cols-2">
           {SECTORS.map((s) => (

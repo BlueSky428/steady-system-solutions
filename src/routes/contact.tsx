@@ -27,7 +27,7 @@ function Page() {
       <Hero
         eyebrow="Contact"
         title={<>Get in <span className="text-signal italic">touch</span>.</>}
-        lede="Mugen.Codes works with organizations building mission-critical systems in defense, aerospace, neurotechnology, and other high-compliance environments. Whether you are exploring a new platform, modernizing legacy infrastructure, preparing for certification, or scaling an existing engineering initiative — our teams are available to discuss in a secure and structured environment."
+        lede="Mugen.Codes works with organizations building mission-critical systems in defense, aerospace, neurotechnology, and other high-compliance environments. Whether you are exploring a new platform, modernizing legacy infrastructure, preparing for certification, or scaling an existing engineering initiative, our teams are available to discuss in a secure and structured environment."
       />
 
       <Section eyebrow="Direct Contact" title="Reach the engineering team.">
@@ -95,7 +95,7 @@ function Page() {
 
       <CTA
         title="Speak with our team."
-        body="We deliver engineering support for high-consequence systems — defense software development, space software consulting, BCI development, verification-focused engineering, compliance support, and mission-critical modernization."
+        body="We deliver engineering support for high-consequence systems: defense software development, space software consulting, BCI development, verification-focused engineering, compliance support, and mission-critical modernization."
         primary={{ to: "mailto:ceo@capa.cloud", label: "Request a Technical Consultation" }}
       />
     </SiteLayout>

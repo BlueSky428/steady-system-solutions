@@ -72,7 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Mugen.Codes – Mission-Critical AI, Defense, Space & BCI Software Engineering" },
+      { title: "Mugen.Codes: Mission-Critical AI, Defense, Space & BCI Software Engineering" },
       {
         name: "description",
         content:
@@ -82,8 +82,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Mugen.Codes" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "Mugen.Codes – Mission-Critical AI, Defense, Space & BCI Software Engineering" },
-      { name: "twitter:title", content: "Mugen.Codes – Mission-Critical AI, Defense, Space & BCI Software Engineering" },
+      { property: "og:title", content: "Mugen.Codes: Mission-Critical AI, Defense, Space & BCI Software Engineering" },
+      { name: "twitter:title", content: "Mugen.Codes: Mission-Critical AI, Defense, Space & BCI Software Engineering" },
       { name: "description", content: "Mugen.Codes builds mission-critical software for defense, space, and BCI applications." },
       { property: "og:description", content: "Mugen.Codes builds mission-critical software for defense, space, and BCI applications." },
       { name: "twitter:description", content: "Mugen.Codes builds mission-critical software for defense, space, and BCI applications." },
