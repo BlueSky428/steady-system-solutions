@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import logo from "@/logo.png";
 
 function NotFoundComponent() {
   return (
@@ -91,6 +92,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9608a2bd-96a8-4df1-9e02-5bd540da822d/id-preview-99e90e63--cf98088b-896d-4cd4-8725-85e9e7201069.lovable.app-1778496410691.png" },
     ],
     links: [
+      { rel: "icon", href: logo, type: "image/png" },
+      { rel: "apple-touch-icon", href: logo },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },

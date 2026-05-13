@@ -1,12 +1,14 @@
 import { Link } from "@tanstack/react-router";
 
+import logo from "@/logo.png";
+
 export function Footer() {
   return (
     <footer className="mt-32 border-t border-border bg-surface">
       <div className="container-x py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2 font-mono text-sm">
-            <span className="inline-block h-2 w-2 rounded-full bg-signal" />
+          <div className="flex items-center gap-2.5 font-mono text-sm">
+            <img src={logo} alt="" width={36} height={36} className="h-9 w-9 shrink-0 object-contain" />
             Mugen<span className="text-signal">.</span>Codes
           </div>
           <p className="mt-4 max-w-md text-sm text-muted-foreground leading-relaxed">

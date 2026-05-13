@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 
+import logo from "@/logo.png";
+
 const NAV = [
   { to: "/", label: "Home" },
   { to: "/defense-software-development", label: "Defense" },
@@ -17,9 +19,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-mono text-sm tracking-tight">
-          <span className="inline-block h-2 w-2 rounded-full bg-signal animate-pulse" />
-          <span className="font-medium">Mugen<span className="text-signal">.</span>Codes</span>
+        <Link
+          to="/"
+          className="flex items-center gap-2.5 font-mono text-sm tracking-tight"
+        >
+          <img src={logo} alt="" width={36} height={36} className="h-9 w-9 shrink-0 object-contain" />
+          <span className="font-medium">
+            Mugen<span className="text-signal">.</span>Codes
+          </span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
