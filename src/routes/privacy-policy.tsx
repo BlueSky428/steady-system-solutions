@@ -58,7 +58,7 @@ const USE_ITEMS = [
 const RIGHTS_ITEMS = [
   "Access and correction of your personal information on request",
   "Opt-out of marketing communications via unsubscribe instructions",
-  "Services intended for professional software development—not directed at children under 13",
+  "Services intended for professional software development - not directed at children under 13",
 ];
 
 function Page() {
@@ -71,7 +71,7 @@ function Page() {
             Privacy <span className="text-signal italic">Policy</span>
           </>
         }
-        lede="How Mugen.Codes handles information in the course of software development and consultancy services—for predictable delivery, maintainable systems, and strict data segregation in regulated environments."
+        lede="How Mugen.Codes handles information in the course of software development and consultancy services - for predictable delivery, maintainable systems, and strict data segregation in regulated environments."
         ctaPrimary={{ to: "/contact", label: "Contact the team" }}
         ctaSecondary={{ to: "/", label: "Back to home" }}
       />
