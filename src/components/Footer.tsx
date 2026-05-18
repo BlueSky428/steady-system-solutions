@@ -64,7 +64,14 @@ export function Footer() {
               <p>1309 Coffeen Avenue STE 1200, Sheridan, Wyoming 82801</p>
             </div>
           </div>
-          <p className="mt-4 shrink-0 md:mt-0">© CapaCloud Corp 2026. All rights reserved.</p>
+          <div className="mt-4 shrink-0 md:mt-0 space-y-2 text-right">
+            <p>
+              <Link to="/privacy-policy" className="hover:text-signal transition-colors">
+                Privacy Policy
+              </Link>
+            </p>
+            <p>© CapaCloud Corp 2026. All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>

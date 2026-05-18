@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SpaceSoftwareEngineeringRouteImport } from './routes/space-software-engineering'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as MissionCriticalSoftwareCompanyRouteImport } from './routes/mission-critical-software-company'
 import { Route as DefenseSoftwareDevelopmentRouteImport } from './routes/defense-software-development'
@@ -24,6 +25,11 @@ const SpaceSoftwareEngineeringRoute =
     path: '/space-software-engineering',
     getParentRoute: () => rootRouteImport,
   } as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PortfolioRoute = PortfolioRouteImport.update({
   id: '/portfolio',
   path: '/portfolio',
@@ -72,6 +78,7 @@ export interface FileRoutesByFullPath {
   '/defense-software-development': typeof DefenseSoftwareDevelopmentRoute
   '/mission-critical-software-company': typeof MissionCriticalSoftwareCompanyRoute
   '/portfolio': typeof PortfolioRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/space-software-engineering': typeof SpaceSoftwareEngineeringRoute
 }
 export interface FileRoutesByTo {
@@ -82,6 +89,7 @@ export interface FileRoutesByTo {
   '/defense-software-development': typeof DefenseSoftwareDevelopmentRoute
   '/mission-critical-software-company': typeof MissionCriticalSoftwareCompanyRoute
   '/portfolio': typeof PortfolioRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/space-software-engineering': typeof SpaceSoftwareEngineeringRoute
 }
 export interface FileRoutesById {
@@ -93,6 +101,7 @@ export interface FileRoutesById {
   '/defense-software-development': typeof DefenseSoftwareDevelopmentRoute
   '/mission-critical-software-company': typeof MissionCriticalSoftwareCompanyRoute
   '/portfolio': typeof PortfolioRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
   '/space-software-engineering': typeof SpaceSoftwareEngineeringRoute
 }
 export interface FileRouteTypes {
@@ -105,6 +114,7 @@ export interface FileRouteTypes {
     | '/defense-software-development'
     | '/mission-critical-software-company'
     | '/portfolio'
+    | '/privacy-policy'
     | '/space-software-engineering'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -115,6 +125,7 @@ export interface FileRouteTypes {
     | '/defense-software-development'
     | '/mission-critical-software-company'
     | '/portfolio'
+    | '/privacy-policy'
     | '/space-software-engineering'
   id:
     | '__root__'
@@ -125,6 +136,7 @@ export interface FileRouteTypes {
     | '/defense-software-development'
     | '/mission-critical-software-company'
     | '/portfolio'
+    | '/privacy-policy'
     | '/space-software-engineering'
   fileRoutesById: FileRoutesById
 }
@@ -136,6 +148,7 @@ export interface RootRouteChildren {
   DefenseSoftwareDevelopmentRoute: typeof DefenseSoftwareDevelopmentRoute
   MissionCriticalSoftwareCompanyRoute: typeof MissionCriticalSoftwareCompanyRoute
   PortfolioRoute: typeof PortfolioRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   SpaceSoftwareEngineeringRoute: typeof SpaceSoftwareEngineeringRoute
 }
 
@@ -146,6 +159,13 @@ declare module '@tanstack/react-router' {
       path: '/space-software-engineering'
       fullPath: '/space-software-engineering'
       preLoaderRoute: typeof SpaceSoftwareEngineeringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/portfolio': {
@@ -209,6 +229,7 @@ const rootRouteChildren: RootRouteChildren = {
   DefenseSoftwareDevelopmentRoute: DefenseSoftwareDevelopmentRoute,
   MissionCriticalSoftwareCompanyRoute: MissionCriticalSoftwareCompanyRoute,
   PortfolioRoute: PortfolioRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
   SpaceSoftwareEngineeringRoute: SpaceSoftwareEngineeringRoute,
 }
 export const routeTree = rootRouteImport
