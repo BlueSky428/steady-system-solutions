@@ -32,9 +32,9 @@ function Page() {
 
       <Section eyebrow="Direct Contact" title="Reach the engineering team.">
         <div className="grid gap-6 md:grid-cols-2">
-          <a href="mailto:ceo@capa.cloud" className="panel p-8 hover:border-signal transition-colors">
+          <a href="mailto:mugen.codes@capa.cloud" className="panel p-8 hover:border-signal transition-colors">
             <p className="eyebrow">Encrypted Email</p>
-            <p className="mt-4 font-display text-2xl">ceo@capa.cloud</p>
+            <p className="mt-4 font-display text-2xl">mugen.codes@capa.cloud</p>
             <p className="mt-3 text-sm text-muted-foreground">PGP public key available upon request for sensitive technical discussions.</p>
           </a>
           <div className="panel p-8">
@@ -96,7 +96,7 @@ function Page() {
       <CTA
         title="Speak with our team."
         body="We deliver engineering support for high-consequence systems: defense software development, space software consulting, BCI development, verification-focused engineering, compliance support, and mission-critical modernization."
-        primary={{ to: "mailto:ceo@capa.cloud", label: "Request a Technical Consultation" }}
+        primary={{ to: "mailto:mugen.codes@capa.cloud", label: "Request a Technical Consultation" }}
       />
     </SiteLayout>
   );

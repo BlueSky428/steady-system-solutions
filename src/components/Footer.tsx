@@ -16,7 +16,7 @@ export function Footer() {
             Calm delivery of mission-critical software for defense, space, and brain-computer interface organizations.
           </p>
           <div className="mt-6 space-y-1 text-xs font-mono text-muted-foreground">
-            <p>📧 ceo@capa.cloud</p>
+            <p>📧 mugen.codes@capa.cloud</p>
             <p>🔒 PGP / Signal available on request</p>
           </div>
         </div>

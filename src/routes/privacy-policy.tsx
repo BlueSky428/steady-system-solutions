@@ -181,11 +181,11 @@ function Page() {
       <Section eyebrow="Contact" title="Questions about this policy.">
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="mailto:ceo@capa.cloud"
+            href="mailto:mugen.codes@capa.cloud"
             className="panel p-8 hover:border-signal transition-colors"
           >
             <p className="eyebrow">Email</p>
-            <p className="mt-4 font-display text-2xl">ceo@capa.cloud</p>
+            <p className="mt-4 font-display text-2xl">mugen.codes@capa.cloud</p>
             <p className="mt-3 text-sm text-muted-foreground">
               If you have questions regarding this policy or need more help, contact the Mugen Codes team.
             </p>
